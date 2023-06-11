@@ -219,9 +219,7 @@ function OrgPostCard(props: OrgPostCardProps): JSX.Element {
       {/* Edit Modal */}
       <Modal show={showEditModal} onHide={toggleShowEditModal}>
         <Modal.Header>
-          <h5 className="modal-title" id={`editPostModal${props.id}Label`}>
-            {t('editPost')}
-          </h5>
+          <h5>{t('editPost')}</h5>
           <Button variant="danger" onClick={toggleShowEditModal}>
             <i className="fa fa-times"></i>
           </Button>
